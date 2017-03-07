@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      var ourRequest = new XMLHttpRequest();
+      ourRequest.open('GET', 'http://127.0.0.1:8000/api/todos');
+      ourRequest.onload = function() {
+        console.log(ourRequest.responseText);
+      };
+      ourRequest.send();
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
